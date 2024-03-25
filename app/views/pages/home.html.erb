@@ -1,0 +1,8 @@
+<h1>Bienvenue sur la page d'accueil</h1>
+
+<% if user_signed_in? %>
+  <h2>Voici votre image :</h2>
+   <%= image_tag 'train.png', alt: 'Image de l\'utilisateur' %>
+<% else %>
+  <p>Veuillez vous connecter pour voir votre image.</p>
+<% end %>
